@@ -2,6 +2,7 @@ import quizArray from './questions.js';
 
 // DOM Elements
 const body = document.querySelector('body');
+const introBtn = document.querySelector('#intro__btn');
 const menuButtons = document.querySelectorAll('.menu__btn');
 const gameLinks = document.querySelectorAll('.game__link');
 const quizCategoryTag = document.querySelector('.category');
@@ -162,6 +163,10 @@ const controlView = () => {
 menuButtons.forEach((menuBtn) => {
   menuBtn.addEventListener('click', controlView);
 });
+
+introBtn.addEventListener('click', () =>
+  setTimeout(() => quizSection.classList.add('hidden'), 500)
+);
 
 // Timer Function
 function startTimer(time) {
