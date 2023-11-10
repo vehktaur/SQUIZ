@@ -12,6 +12,7 @@ html {
 body {
   background-color: #faf1e4;
   color: #435334;
+  font-size: clamp(0.9rem, 3vw, 1rem);
 }
 /* NAVIGATION */
 header {
@@ -57,10 +58,11 @@ nav {
   max-width: 800px;
 }
 h1 {
-  font-size: 3.5rem;
+  font-size: clamp(2.5rem, 3vw, 3.5rem);
 }
 .intro__content__text {
   margin-top: 3rem;
+  line-height: 1.6;
 }
 .start__btn {
   background-color: transparent;
@@ -95,10 +97,11 @@ h1 {
   justify-items: center;
 }
 .quiz__option {
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.784);
   border: 1px solid #cedebd;
   border-radius: 1rem;
-  color: #333;
+  color: #222;
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
