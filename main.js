@@ -157,6 +157,7 @@ gameLinks.forEach((gameLink) => {
 const controlView = () => {
   body.classList.remove('no__overflow');
   setTimeout(() => quizSection.classList.add('hidden'), 500);
+  clearInterval(counter);
 };
 
 // Event Listeners for Menu Buttons
@@ -164,9 +165,10 @@ menuButtons.forEach((menuBtn) => {
   menuBtn.addEventListener('click', controlView);
 });
 
-introBtn.addEventListener('click', () =>
-  setTimeout(() => quizSection.classList.add('hidden'), 500)
-);
+introBtn.addEventListener('click', () => {
+  setTimeout(() => quizSection.classList.add('hidden'), 500);
+  clearInterval(counter);
+});
 
 // Timer Function
 function startTimer(time) {
