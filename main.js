@@ -27,7 +27,7 @@ const startQuiz = (event) => {
   timer.classList.remove('hidden');
   currentQuestionIndex = 0;
   score = 0;
-  quizCategory = event.target.dataset.category;
+  quizCategory = event.target.id;
   quizCategoryTag.textContent = quizCategory;
 
   //Unhide/Show quiz section
