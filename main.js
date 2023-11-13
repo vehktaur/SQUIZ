@@ -103,7 +103,7 @@ const endQuiz = () => {
 
 // Restart Quiz Function
 const restartQuiz = () => {
-  startQuiz({ target: { dataset: { category: quizCategory } } });
+  startQuiz({ target: { id: quizCategory } });
 };
 
 // Reset State Function
